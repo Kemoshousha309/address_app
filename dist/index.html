@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      #map {
+        width: 90%;
+        margin: 3rem auto;
+        border: 1px solid rgb(85, 85, 85);
+        border-radius: 2px;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #address-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #address-form * {
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map">
+      <p>Enter an address to view on the map ..</p>
+    </div>
+    <form id="address-form">
+      <input id="address" />
+      <button id="search-btn">SEARCH ADDRESS</button>
+    </form>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoz6qs7RvmlnQwZxEGL4q3Qk6IKCHJJEE"
+    ></script>
+    <script type="module" src="./bundle.js"></script>
+  </body>
+</html>
